@@ -31,7 +31,7 @@ with SVI's known strength on liquid, longer-dated slices.
 5. `src/main.py` — runs the full pipeline and produces all plots + the
    error comparison.
 
-## ⚠️ Important: this uses synthetic data
+##  Important: this uses synthetic data
 
 The pipeline logic (pricer, IV solver, SVI calibration, error analysis) is
 fully real and tested. The **input data is synthetic** — generated from a
