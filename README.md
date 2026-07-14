@@ -48,13 +48,10 @@ pip install yfinance
 ```python
 import yfinance as yf
 tk = yf.Ticker("SPY")
-expiries = tk.options                    # available expiry date strings
-chain = tk.option_chain(expiries[0])     # -> chain.calls, chain.puts
+expiries = tk.options                    
+chain = tk.option_chain(expiries[0])     
 
-# Reshape into the same columns main.py expects:
-# ['strike', 'expiry_days', 'expiry_years', 'moneyness', 'option_type', 'market_price']
-# Use chain.calls/chain.puts' 'strike' and ('bid'+'ask')/2 as market_price
-# (mid price is more reliable than lastPrice, which can be stale).
+
 ```
 
 Then swap the `generate_synthetic_chain()` call in `main.py` for this real
