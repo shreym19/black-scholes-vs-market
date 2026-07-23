@@ -31,14 +31,6 @@ with SVI's known strength on liquid, longer-dated slices.
 5. `src/main.py` — runs the full pipeline and produces all plots + the
    error comparison.
 
-##  Important: this uses synthetic data
-
-The pipeline logic (pricer, IV solver, SVI calibration, error analysis) is
-fully real and tested. The **input data is synthetic** — generated from a
-hand-built "true" vol surface with realistic skew/smile/term-structure
-baked in — because this was built in a sandboxed environment with no
-internet access to Yahoo Finance.
-
 **To run this on real market data on your own machine:**
 
 ```bash
