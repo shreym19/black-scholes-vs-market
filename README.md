@@ -60,8 +60,6 @@ works unchanged — that's the entire point of separating data from logic.
 
 ## Limitations / honest caveats
 
-- Synthetic data by necessity here (see above) — swap to real data before
-  presenting this as an empirical result.
 - SVI is fit expiry-by-expiry with no cross-expiry arbitrage constraint
   enforced (calendar-spread arbitrage-free SVI is a further refinement —
   see Gatheral & Jacquier 2014).
