@@ -72,11 +72,3 @@ works unchanged — that's the entire point of separating data from logic.
   typically illiquid/noisy in real markets — standard practice, but worth
   stating explicitly.
 
-## Possible extensions
-
-- Add Heston (stochastic vol) and/or Merton jump-diffusion, calibrate
-  alongside SVI, compare all three.
-- Delta-hedging backtest: simulate hedging using flat vol vs. SVI-implied
-  vol and measure real hedging P&L variance.
-- Enforce arbitrage-free SVI across the full surface (butterfly + calendar
-  spread constraints).
